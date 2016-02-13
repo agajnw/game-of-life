@@ -1,0 +1,12 @@
+# Czas w ms, co jaki automatycznie bedzie generowane przejscie automatu
+czas = 2000
+# Po ilu krokach sie zatrzymac? (0 = nieskonczonosc)
+liczba_krokow = 10
+# Nazwa pliku do exportu HTML
+export_html = 
+# Co ile iteracji eksportowac?
+export_iteracje = 
+
+plansza = + - - + + - - - - + - + - - - - - - + - + +
+plansza = - + - - - - - + - - + - - - - + + - - + - -
+plansza = - - + + + - - - + - - - + - - + + - - + - -
