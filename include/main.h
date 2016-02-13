@@ -1,4 +1,4 @@
-#include <ncurses/form.h>
+#include <ncursesw/form.h>
 #include <iostream>
 #include <cmath>
 #include <vector>

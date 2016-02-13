@@ -9,7 +9,7 @@ OBJDIR = obj
 SRCDIR = src
 INCDIR = include
 
-SOURCES = ${FILES:%=${SRCDIR}/%.c}
+SOURCES = ${FILES:%=${SRCDIR}/%.cpp}
 OBJECTS = ${FILES:%=${OBJDIR}/%.o}
 
 CXXFLAGS += -I${INCDIR} -I/usr/local/include -Wall
@@ -28,7 +28,7 @@ ${RESULT}: ${OBJECTS}
 	${CXX} ${LDFLAGS} -o ${RESULT} ${OBJECTS}
 	@echo "[\033[01;32mOK\033[00m]"
 
-${OBJDIR}/%.o: ${SRCDIR}/%.c
+${OBJDIR}/%.o: ${SRCDIR}/%.cpp
 	@echo ""
 	@echo -n "Kompiluje \033[01;37m$<\033[00m...				"
 	$(CXX) ${CXXFLAGS} -c -o $@ $<
